@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import Layout from '../layouts/Layout.astro';
+import flowersCatalog from '../components/Catalog.astro';
+import Catalog from '../components/Catalog.astro';
+---
+
+<Layout>
+	<Header />
+	<section class="home">
+		<div class="bg-gradient-to-b from-[#ff7593] to-[#ffd1db] h-screen flex items-center">
+			<img src="/src/assets/images/banner-removebg.webp" alt="banner" class="banner absolute bottom-0 right-40 h-[99vh]">
+			<div class="flex flex-col container mx-auto gap-5">
+				<div>
+					<span class="text-white font-marck text-3xl font-medium">Flowers shop</span>
+					<h1 class="uppercase font-bold text-8xl text-[#ff184b] drop-shadow-4xl font-funnelsans">Spring Bouquet</h1>
+				</div>
+				<div class="flex flex-col gap-6">
+					<p class="text-white text-lg w-1/3 font-funnelsans font-light">
+						At Aroma, we make every occasion special with fresh, carefully chosen flowers. Explore our catalog of unique arrangements designed to express love, gratitude, joy, and more.
+					</p>
+					<a href="#catalog" class="rounded-full bg-gradient-to-r from-[#ff6a8e] to-[#ff184b] px-10 py-3 text-white flex w-fit drop-shadow-2xl font-funnelsans font-medium transition ease-in-out delay-50 hover:scale-105 duration-300">Shop now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="catalog" class="catalog h-screen ">
+		<Catalog />
+	</section>
+</Layout>
+
+<style>
+	.banner {
+		mask-image: linear-gradient(
+			white 80%, transparent
+		);
+	}
+</style>
