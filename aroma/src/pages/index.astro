@@ -1,8 +1,8 @@
 ---
+// import Catalog from '../components/Catalog.astro';
+import Catalog from '../components/Catalog.astro';
 import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
-import flowersCatalog from '../components/Catalog.astro';
-import Catalog from '../components/Catalog.astro';
 ---
 
 <Layout>
@@ -17,17 +17,17 @@ import Catalog from '../components/Catalog.astro';
 				</div>
 				<div class="flex flex-col gap-6">
 					<p class="text-white text-lg w-1/3 font-funnelsans font-light">
-						At Aroma, we make every occasion special with fresh, carefully chosen flowers. Explore our catalog of unique arrangements designed to express love, gratitude, joy, and more.
+						At Azalea, we make every occasion special with fresh, carefully chosen flowers. Explore our catalog of unique arrangements designed to express love, gratitude, joy, and more.
 					</p>
 					<a href="#catalog" class="rounded-full bg-gradient-to-r from-[#ff6a8e] to-[#ff184b] px-10 py-3 text-white flex w-fit drop-shadow-2xl font-funnelsans font-medium transition ease-in-out delay-50 hover:scale-105 duration-300">Shop now</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="catalog" class="catalog h-screen ">
-		<Catalog />
-	</section>
+	<Catalog />
 </Layout>
+
+<script src="../../node_modules/preline/dist/preline"></script>
 
 <style>
 	.banner {
